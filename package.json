@@ -17,5 +17,16 @@
     "gulp-sass": "^6.0.0",
     "gulp-uglify": "^3.0.2",
     "sass": "^1.83.4"
-  }
+  },
+  "builds": [
+    {
+      "src": "src/index.js",
+      "use": "@vercel/node",
+      "config": {
+        "outputDirectory": "public"
+      }
+    }
+  ]
 }
+
+
