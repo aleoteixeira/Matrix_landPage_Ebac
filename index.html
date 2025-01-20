@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrix - Bem-vindo à Realidade</title>
+    <link rel="stylesheet" href="/dist/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <h1>
+          <img class="header__logo" src="/src/images/mat.png" alt="Logo do filme Matrix" />
+        </h1>
+        <nav>
+          <ul class="header__links">
+            <li class="header__links__item button">
+              <a href="#matrix-filme">Filme</a>
+            </li>
+            <li class="header__links__item button">
+              <a href="#matrix-curiosidades">Curiosidades</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <figure class="image">
+            <img src="/src/images/code.jpg" alt="Código verde do Matrix" />
+          </figure>
+          <h2 class="title--small">Escolha a pílula vermelha</h2>
+          <p class="text">
+            Você está pronto para descobrir a verdade? Mergulhe no universo de
+            Matrix e explore os segredos de uma realidade que transcende o
+            imaginável.
+          </p>
+          <h3 class="text--big">Assista e questione a realidade</h3>
+        </div>
+      </section>
+
+      <section class="trailer" id="matrix-filme">
+        <h2 class="trailer__title title--big">Trailers</h2>
+        <div class="trailer__content">
+          <nav class="trailer__content__nav" aria-label="Navegação de trailers">
+            <button
+              data-tab-button="matrix1999"
+              class="trailer__content__nav__button title trailer__content__nav__button--is-active"
+            >
+              Matrix - 1999
+            </button>
+            <button
+              data-tab-button="matrix2021"
+              class="trailer__content__nav__button title"
+            >
+              Matrix Resurrections - 2021
+            </button>
+          </nav>
+          <ul class="trailer__content__list">
+            <li data-tab-id="matrix1999" class="trailer__content__list__each">
+              <iframe
+                width="700"
+                height="394"
+                src="https://www.youtube.com/embed/vKQi3bBA1y8"
+                title="Trailer do Matrix 1999"
+                frameborder="0"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </li>
+            <li
+              data-tab-id="matrix2021"
+              hidden
+              class="trailer__content__list__each"
+            >
+              <iframe
+                width="700"
+                height="394"
+                src="https://www.youtube.com/embed/9ix7TUGVYIo"
+                title="Trailer do Matrix Resurrections"
+                frameborder="0"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__content">
+          <nav class="about__content__nav" aria-label="Navegação sobre Matrix">
+            <button
+              data-tab-button="story"
+              class="about__content__nav__button about__content__nav__button--is-active"
+            >
+              Enredo
+            </button>
+            <button data-tab-button="tech" class="about__content__nav__button">
+              Tecnologia
+            </button>
+            <button
+              data-tab-button="themes"
+              class="about__content__nav__button"
+            >
+              Temas Filosóficos
+            </button>
+          </nav>
+          <article>
+            <p
+              data-tab-id="story"
+              class="about__content__text about__content__text--is-active"
+            >
+              A trilogia Matrix explora a luta entre a humanidade e as máquinas
+              que a aprisionaram em uma simulação virtual chamada Matrix. Neo,
+              um hacker comum, descobre que é o Escolhido destinado a libertar a
+              humanidade. Com Morpheus, Trinity e a resistência, ele enfrenta
+              desafios existenciais e batalhas épicas enquanto tenta salvar o
+              mundo real.
+            </p>
+            <p data-tab-id="tech" hidden class="about__content__text">
+              Matrix trouxe inovações cinematográficas como o "bullet time",
+              onde as câmeras capturam cenas em câmera lenta de maneira
+              espetacular. Além disso, sua narrativa filosófica sobre
+              inteligência artificial, realidades simuladas e o controle das
+              máquinas foi pioneira, redefinindo o cinema de ficção científica.
+            </p>
+            <p data-tab-id="themes" hidden class="about__content__text">
+              Matrix é uma obra que aborda temas profundos como o
+              livre-arbítrio, a percepção da realidade e o controle sistêmico.
+              Inspirado por conceitos de filósofos como Descartes e Baudrillard,
+              o filme convida os espectadores a questionarem se o mundo que
+              conhecemos é real ou apenas uma ilusão.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="matrix-curiosidades" class="curiosities">
+        <h2 class="curiosities__title title--big">Curiosidades</h2>
+        <ul class="curiosities__list">
+          <li>
+            A palavra "Matrix" vem do latim e significa "útero" ou "origem".
+          </li>
+          <li>
+            O código verde da Matrix foi criado usando receitas de sushi
+            digitalizadas!
+          </li>
+          <li>
+            Keanu Reeves treinou artes marciais por quatro meses para realizar
+            as cenas de ação.
+          </li>
+          <li>
+            O filme ganhou quatro Oscars, incluindo Melhor Edição e Melhores
+            Efeitos Visuais.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__content">
+        <p class="footer__text">
+          Este site é um projeto fictício inspirado no universo de Matrix. Todos
+          os direitos pertencem à Warner Bros. Pictures.
+        </p>
+        <p class="footer__text">
+          © 2025 - Desenvolvido por Alessandro Teixeira. Código disponível no
+          <a href="https://github.com/aleoteixeira/Matrix_landPage_Ebac.git" target="_blank" rel="noopener noreferrer"
+            >GitHub</a
+          >.
+        </p>
+      </div>
+    </footer>
+
+    <script src="/dist/js/script.js"></script>
+  </body>
+</html>

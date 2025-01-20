@@ -1,0 +1,234 @@
+// =============================
+// Variáveis globais
+// =============================
+$color-bg: rgb(7, 36, 7);
+$color-text: #0f0;
+$color-accent: #0f0;
+$color-dark: #0a0a0a;
+$color-hover: #005500;
+$font-family: "Courier New", Courier, monospace;
+
+// =============================
+// Reset básico
+// =============================
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $color-bg;
+  color: $color-text;
+  line-height: 1.6;
+}
+
+// =============================
+// Cabeçalho
+// =============================
+header {
+  background-color: $color-dark;
+  padding: 20px;
+  border-bottom: 1px solid $color-accent;
+
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__logo {
+      width: 150px;
+    }
+
+    .header__links {
+      list-style: none;
+      display: flex;
+
+      .header__links__item {
+        margin-left: 20px;
+
+        a {
+          text-decoration: none;
+          color: $color-text;
+          padding: 10px 15px;
+          border: 1px solid $color-accent;
+          transition: background-color 0.3s;
+
+          &:hover,
+          &:focus {
+            background-color: $color-accent;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+// =============================
+// Hero Section
+// =============================
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-image: url("./dist/images/hero/matrix_background.jpg");
+  background-size: cover;
+  background-position: center;
+
+  .hero__content {
+    img {
+      width: 300px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: #000;
+      background-color: $color-accent;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+
+      &:hover,
+      &:focus {
+        background-color: $color-hover;
+      }
+    }
+  }
+}
+
+// =============================
+// Trailer Section
+// =============================
+.trailer {
+  padding: 50px 20px;
+  border-top: 1px solid $color-accent;
+
+  .trailer__title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .trailer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .trailer__content__nav {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      .trailer__content__nav__button {
+        background-color: $color-accent;
+        color: #000;
+        border: none;
+        margin: 0 10px;
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover,
+        &:focus {
+          background-color: $color-hover;
+        }
+      }
+    }
+
+    .trailer__content__list {
+      width: 100%;
+      max-width: 800px;
+
+      .trailer__content__list__each iframe {
+        width: 100%;
+        border: none;
+      }
+    }
+  }
+}
+
+// =============================
+// About Section
+// =============================
+.about {
+  padding: 50px 20px;
+  border-top: 1px solid $color-accent;
+
+  .about__content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
+    .about__content__nav {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+
+      .about__content__nav__button {
+        background-color: $color-accent;
+        color: #000;
+        border: none;
+        margin: 0 10px;
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover,
+        &:focus {
+          background-color: $color-hover;
+        }
+      }
+    }
+
+    .about__content__text {
+      display: none;
+
+      &--is-active {
+        display: block;
+      }
+    }
+  }
+}
+
+// =============================
+// Footer
+// =============================
+footer {
+  background-color: $color-dark;
+  padding: 20px;
+  text-align: center;
+  color: $color-text;
+  border-top: 1px solid $color-accent;
+
+  a {
+    color: $color-text;
+    text-decoration: underline;
+  }
+}
+
+// =============================
+// Botões genéricos
+// =============================
+button {
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: 2px solid $color-accent;
+  }
+}
